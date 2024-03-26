@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Estilo Bigotes es una tienda al por menor dedicado a la venta de productos como alimento, indumentaria y accesorios para mascotas en general."
+    />
+    <meta
+      name="keywords"
+      content="perro, gato, mascota, alimento, ropa, juguetes, indumentaria, animales, ofertas, royal cannin, petshop"
+    />
+    <meta name="author" content="Grupo 5" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../img/logos/estiloBigotesIcon.ico" type="image/x-icon" />
+    <title>Estilo Bigotes - Petshop</title>
+  </head>
+  <body id="bodyProductoIndividual">
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg bg-light">
+        <div class="container text-center">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="../index.html"
+            id="logoLink"
+            ><img
+              src="../img/logos/estiloBigotesLogoSinFondo.png"
+              alt="Logo de estilo bigotes"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarEstiloBigotes"
+            aria-controls="navbarEstiloBigotes"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarEstiloBigotes">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="perros.html"
+                      >Perros</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="gatos.html">Gatos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item active" href="./alimentos.html"
+                      >Alimentos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Atención al Cliente
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./entregaEnvios.html"
+                      >Entrega y Envíos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./devoluciones.html"
+                      >Devoluciones</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html"
+                  >Acerca de Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary me-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalMisMascotas"
+                >
+                  <i class="bi bi-camera"></i> Mis Mascotas
+                </button>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+                minlength="3"
+                maxlength="50"
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                Buscar
+              </button>
+            </form>
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-column text-center align-items-center"
+            >
+              <li class="nav-item d-flex">
+                <ul class="navbar-nav ms-auto mb-lg-0 d-flex flex-row">
+                  <li class="nav-item my-auto">
+                    <a
+                      class="nav-link fs-4 p-0 mt-2 m-md-0 m-lg-0"
+                      href="./login.html"
+                      ><i class="bi bi-person-circle"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item my-auto">
+                    <a
+                      class="nav-link fs-4 mt-2 p-0 m-md-0 m-lg-0"
+                      href="./carrito.html"
+                      ><i class="bi bi-cart3"></i
+                    ></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item my-auto" id="crearCuenta">
+                <a class="nav-link" href="./crearCuenta.html">Crear Cuenta</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- MODAL  -->
+      <div
+        class="modal fade"
+        id="modalMisMascotas"
+        tabindex="-1"
+        aria-labelledby="label modal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalMisMascotas">
+                ¡Subí una foto de tu/s mascota/s!
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <img
+                      src="../img/modalPerroGato.avif"
+                      alt="perro y gato"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <p class="fs-5 fw-bold">
+                      Presentá a tu mascota y obtené un 10% de descuento!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <a href="./error404.html" role="button" class="btn btn-warning">Subir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container-fluid containerTraveness">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mx-0 sectionCarousel2">
+            <div
+              id="imgProducto"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../img/royal-canin-producto/royal-producto1.jpg"
+                    class="d-block w-100"
+                    alt="bolsa alimento gato frente"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../img/royal-canin-producto/royal-producto-3.jpeg"
+                    class="d-block w-100"
+                    alt="caracteristicas del producto"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#imgProducto"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#imgProducto"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <section class="container sectionDetalle">
+            <div class="row">
+              <div class="col-md-6 col-lg-3 sectionDetalle1">
+                <h2 class="mt-4">
+                  Royal Canin Sterilised 37 Pienso para Gato Adulto Esterilizado
+                </h2>
+                <div class="d-flex">
+                  <p>
+                    <a
+                      href="#sectionComentarios"
+                      class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                      >6 comentarios</a
+                    >
+                  </p>
+                  <p class="producto-rating">|</p>
+                  <p>
+                    <a
+                      href="#descripcionCompleta"
+                      class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                      >Ver descripción completa</a
+                    >
+                  </p>
+                </div>
+                <p>
+                  <a
+                    class="link-secondary link-offset-5-hover text-decoration-none arreglosIpad"
+                  >
+                    Royal Canin Sterilised 37 es un pienso para gatos adultos
+                    esterilizados, que cubre las necesidades energéticas de los
+                    felinos, que se verán disminuidas tras la esterilización,
+                    asegurando entonces un buen estado de salud.</a
+                  >
+                </p>
+                <h5 class="mb-3">Peso Producto</h5>
+                <div class="preciosCard">
+                  <div class="row">
+                    <div class="col-3 d-flex">
+                      <div>
+                        <ul
+                          class="btn btn-outline-dark list-unstyled preciosCardMini px-1"
+                        >
+                          <p class="btn btn-info text-white fw-bold boton">
+                            -10%
+                          </p>
+                          <h6 class="fw-bold">2 kg</h6>
+                          <li class="text-info fw-bold">$6.872,65</li>
+                          <li class="text-secondary">$3.436,33/kg</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul
+                          class="btn btn-outline-dark list-unstyled preciosCardMini px-1"
+                        >
+                          <p class="btn btn-info text-white fw-bold boton">
+                            -10%
+                          </p>
+                          <h6 class="fw-bold">4 kg</h6>
+                          <li class="text-info fw-bold">$5.587,81</li>
+                          <li class="text-secondary">$2.896,95/kg</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul
+                          class="btn btn-outline-dark list-unstyled preciosCardMini px-1"
+                        >
+                          <p class="btn btn-info text-white fw-bold boton">
+                            -7%
+                          </p>
+                          <h6 class="fw-bold">10 kg</h6>
+                          <li class="text-info fw-bold">$24.996,38</li>
+                          <li class="text-secondary">$2.496,94/kg</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <article class="mt-5" id="descripcionCompleta">
+                  <hr />
+                  <h2 class="subtitulo1 h1 mt-5">Descripción</h2>
+                  <h3 class="subtitulo1 my-4">
+                    Royal Canin Sterilised 37 Pienso para Gato Adulto
+                    Esterilizado
+                  </h3>
+                  <p class="arreglosIpad">
+                    Royal Canin Sterilised 37 es un pienso para gatos adultos
+                    esterilizados, que cubre las necesidades energéticas de los
+                    felinos, que se verán disminuidas tras la esterilización,
+                    asegurando entonces un buen estado de salud.
+                  </p>
+                  <p class="arreglosIpad">
+                    Esta dieta completa para gatos esterilizados incluye en su
+                    preparación un contenido graso moderado, que, unido a un
+                    sistema de raciones adecuadas, permitirá que tu mascota pueda
+                    mantenerse en su peso ideal. Así mismo, esta comida para
+                    gatos cuenta con una carga mineral adecuada para propiciar
+                    un sistema urinario sano en tu gato.
+                  </p>
+                  <p class="arreglosIpad">
+                    Este alimento para gatos incluye también L-carnitina, un
+                    aminoácido que colabora en el proceso de metabolización de
+                    las grasas, sumado a los niveles adecuados de proteínas,
+                    permite que tu mascota esterilizada mantenga una buena masa
+                    muscular.
+                  </p>
+                  <p class="arreglosIpad">
+                    Esta dieta está disponible en formato húmedo con una salsa
+                    especial o puedes elegir la versión presentada en gelatina.
+                  </p>
+                  <h5 class="my-4">Beneficios</h5>
+                  <ul class="listasImg arreglosIpad">
+                    <li>Mantiene un control del peso</li>
+                    <li>Cuida de la salud urinaria</li>
+                    <li>Alto contenido de proteinas</li>
+                  </ul>
+                  <h5 class="my-4">Características</h5>
+                  <ul class="listasImg arreglosIpad">
+                    <li>Disponible en formato húmedo y como gelatina</li>
+                    <li>Incluye L-carnitina</li>
+                    <li>Contenido graso moderado</li>
+                  </ul>
+                  <h5 class="my-4">Guía de alimentación</h5>
+                  <table
+                    class="table table-responsive table-responsive-sm table-bordered border-info my-5 w-100"
+                  >
+                    <tbody>
+                      <tr class="table-primary text-white">
+                        <th scope="col">Peso del gato</th>
+                        <th scope="col">3 kg</th>
+                        <th scope="col">4 kg</th>
+                        <th scope="col">5 kg</th>
+                        <th scope="col">6 kg</th>
+                      </tr>
+
+                      <tr class="table-light border border-info">
+                        <th scope="row">Peso ideal</th>
+                        <td>47 g (30 g + 1 sobre)</td>
+                        <td>57 g (41 g + 1 sobre)</td>
+                        <td>67 g (51 g + 1 sobre)</td>
+                        <td>76 g ( 60 g + 1 sobre)</td>
+                      </tr>
+                      <tr class="table-white">
+                        <th scope="row">Sobrepeso</th>
+                        <td>37 g (21 g + 1 sobre)</td>
+                        <td>46 g (29 g + 1 sobre)</td>
+                        <td>54 g (37 g + 1 sobre)</td>
+                        <td>61 g (44 g + 1 sobre)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h5 class="my-5">La opinión de nuestros especialistas recomiendan:</h5>
+                  <p class="arreglosIpad">A todos los propietarios con gato les recomendamos su esterilización/castración por temas de prevención de enfermedades, evitar fugas, marcaje en mobiliario, maullidos nocturnos, en definitiva, por la salud y el bienestar de toda la familia.</p>
+                  <p class="mb-5 arreglosIpad">
+                    Royal Canin piensa en la alimentación adecuada tras la esterilización y nos ofrece Sterilised 37 con menos grasas y buen valor protéico para mantenimiento de su masa muscular sin engordar.</p>
+                  </p>
+                </article>
+              </div>
+            </div>
+          </section>
+          <section class="container sectionComentarios" id="sectionComentarios">
+            <hr />
+            <h2 class="subtitulo1 h1">Opiniones de los Clientes</h2>
+            <h5 class="subtitulo1 h1">
+              Royal Canin Sterilised 37 Pienso para Gato Adulto Esterilizado
+            </h5>
+            <!-- form 5 estrellas -->
+            <form>
+              <p class="clasificacion text-start mt-2 fs-1">
+                <input
+                  id="radio1"
+                  type="radio"
+                  name="estrellas"
+                  value="5"
+                  class="inputEstrella"
+                /><!--
+                          --><label for="radio1" class="labelEstrella">★</label
+                ><!--
+                          --><input
+                  id="radio2"
+                  type="radio"
+                  name="estrellas"
+                  value="4"
+                  class="inputEstrella"
+                /><!--
+                          --><label for="radio2" class="labelEstrella">★</label
+                ><!--
+                          --><input
+                  id="radio3"
+                  type="radio"
+                  name="estrellas"
+                  value="3"
+                  class="inputEstrella"
+                /><!--
+                          --><label for="radio3" class="labelEstrella">★</label
+                ><!--
+                          --><input
+                  id="radio4"
+                  type="radio"
+                  name="estrellas"
+                  value="2"
+                  class="inputEstrella"
+                /><!--
+                          --><label for="radio4" class="labelEstrella">★</label
+                ><!--
+                          --><input
+                  id="radio5"
+                  type="radio"
+                  name="estrellas"
+                  value="1"
+                  class="inputEstrella"
+                /><!--
+                          --><label for="radio5" class="labelEstrella">★</label>
+              </p>
+            </form>
+            <div>
+              <span class="reviews--rating-value mt-1">5 Estrellas</span>
+              <span class="prod__box--rating-number">| 6 opiniones</span>
+            </div>
+            <h5 class="btn btn-outline-info text-dark mb-5">
+              <i class="bi bi-pencil-square"></i> Escribe una opinion
+            </h5>
+            <h5>Valoracion y puntaje de los clientes</h5>
+            <hr />
+            <form>
+              <p class="clasificacion text-start mt-2 fs-4">
+                <input
+                  id="radio1"
+                  type="radio"
+                  name="estrellas"
+                  value="5"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio1" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio2"
+                  type="radio"
+                  name="estrellas"
+                  value="4"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio2" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio3"
+                  type="radio"
+                  name="estrellas"
+                  value="3"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio3" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio4"
+                  type="radio"
+                  name="estrellas"
+                  value="2"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio4" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio5"
+                  type="radio"
+                  name="estrellas"
+                  value="1"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio5" class="labelEstrella">★</label>
+              </p>
+            </form>
+            <p class="mt-0 text-secondary fs-6">
+              Por Daniel Emanuel Araoz el 13/08/2023
+            </p>
+            <p class="fs-6 arreglosIpad">
+              Les encanta, para mis gatos Royal Canin es la marca que tiene
+              mejor sabor.
+            </p>
+            <hr />
+            <form>
+              <p class="clasificacion text-start mt-2 fs-4">
+                <input
+                  id="radio1"
+                  type="radio"
+                  name="estrellas"
+                  value="5"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio1" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio2"
+                  type="radio"
+                  name="estrellas"
+                  value="4"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio2" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio3"
+                  type="radio"
+                  name="estrellas"
+                  value="3"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio3" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio4"
+                  type="radio"
+                  name="estrellas"
+                  value="2"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio4" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio5"
+                  type="radio"
+                  name="estrellas"
+                  value="1"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio5" class="labelEstrella">★</label>
+              </p>
+            </form>
+            <p class="mt-0 text-secondary fs-6">
+              Por Thiago Fiol el 17/09/2023
+            </p>
+            <p class="fs-6 arreglosIpad">
+              Comida de calidad para nuestras mascotas, se lo merecen!
+            </p>
+            <hr />
+            <form>
+              <p class="clasificacion text-start mt-2 fs-4">
+                <input
+                  id="radio1"
+                  type="radio"
+                  name="estrellas"
+                  value="5"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio1" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio2"
+                  type="radio"
+                  name="estrellas"
+                  value="4"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio2" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio3"
+                  type="radio"
+                  name="estrellas"
+                  value="3"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio3" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio4"
+                  type="radio"
+                  name="estrellas"
+                  value="2"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio4" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio5"
+                  type="radio"
+                  name="estrellas"
+                  value="1"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio5" class="labelEstrella">★</label>
+              </p>
+            </form>
+            <p class="mt-0 text-secondary fs-6">
+              Por Juan Diego Quintana el 09/09/2023
+            </p>
+            <p class="fs-6 arreglosIpad">
+              Muy buena calidad de productos, mis mascotas les agradecen como
+              los miman.
+            </p>
+            <hr />
+           
+            <form>
+              <p class="clasificacion text-start mt-2 fs-4">
+                <input
+                  id="radio1"
+                  type="radio"
+                  name="estrellas"
+                  value="5"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio1" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio2"
+                  type="radio"
+                  name="estrellas"
+                  value="4"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio2" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio3"
+                  type="radio"
+                  name="estrellas"
+                  value="3"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio3" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio4"
+                  type="radio"
+                  name="estrellas"
+                  value="2"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio4" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio5"
+                  type="radio"
+                  name="estrellas"
+                  value="1"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio5" class="labelEstrella">★</label>
+              </p>
+            </form>
+            <p class="mt-0 text-secondary fs-6">
+              Por Dylan Navarro el 02/08/2023
+            </p>
+            <p class="fs-6 arreglosIpad">
+              Desde que mis gatas comen este pienso, ya no tienen una alergia.
+            </p>
+            <hr />
+            
+            <form>
+              <p class="clasificacion text-start mt-2 fs-4">
+                <input
+                  id="radio1"
+                  type="radio"
+                  name="estrellas"
+                  value="5"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio1" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio2"
+                  type="radio"
+                  name="estrellas"
+                  value="4"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio2" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio3"
+                  type="radio"
+                  name="estrellas"
+                  value="3"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio3" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio4"
+                  type="radio"
+                  name="estrellas"
+                  value="2"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio4" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio5"
+                  type="radio"
+                  name="estrellas"
+                  value="1"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio5" class="labelEstrella">★</label>
+              </p>
+            </form>
+            <p class="mt-0 text-secondary fs-6">
+              Por Lourdes Ocampo el 15/09/2023
+            </p>
+            <p class="fs-6 arreglosIpad">
+              A mis gatas otros piensos les duran días, y este, les suelen durar horas,
+              les encanta, dejan el plato vacío.
+            </p>
+            <hr />
+          
+            <form>
+              <p class="clasificacion text-start mt-2 fs-4">
+                <input
+                  id="radio1"
+                  type="radio"
+                  name="estrellas"
+                  value="5"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio1" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio2"
+                  type="radio"
+                  name="estrellas"
+                  value="4"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio2" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio3"
+                  type="radio"
+                  name="estrellas"
+                  value="3"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio3" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio4"
+                  type="radio"
+                  name="estrellas"
+                  value="2"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio4" class="labelEstrella">★</label
+                ><!--
+                              --><input
+                  id="radio5"
+                  type="radio"
+                  name="estrellas"
+                  value="1"
+                  class="inputEstrella"
+                /><!--
+                              --><label for="radio5" class="labelEstrella">★</label>
+              </p>
+            </form>
+            <p class="mt-0 text-secondary fs-6">
+              Por Sheyla Astorga el 25/08/2023
+            </p>
+            <p class="fs-6 arreglosIpad">
+              Me llegó un día antes, en buen estado, buen embalaje. Muy
+              contenta.
+            </p>
+            <hr />
+          </section>
+        </div>
+        <aside
+          class="container-fluid bg-light  border border-3 px-2 py-4 promoAlimento2"
+        >
+          <p class="text-primary fw-bold">Precio estándar</p>
+          <div class="row">
+            <div class="col-6">
+              <p class="text-dark fw-bold h1 w-50">$6.900,78</p>
+              <p class="w-50 fs-4 text-secondary tachado2">20,65$</p>
+            </div>
+          </div>
+          <p class="fw-bold">Termina en 1 día</p>
+          <a role="button" href="./error404.html" class="btn btn-outline-secondary bg-white">
+            <p class="text-black m-0">Compra recurrente</p>
+            <p class="text-black m-0">¿Como funciona?</p>
+          </a>
+          <a role="button" href="./error404.html" class="btn bg-danger text-white fw-bold fs-2">
+            5%
+          </a>
+          <p class="mt-5 fw-1">
+            <i class="bi bi-truck fs-2 text-success pe-2"></i>En Stock
+          </p>
+          <section class="pb-5 mt-1">
+            <p class="p-0">Productos</p>
+            <select
+              class="border-2 border-gray-500 rounded-lg p-2 w-25 text-center"
+            >
+              <option value="producto1">1</option>
+              <option value="producto1">2</option>
+              <option value="producto1">3</option>
+              <option value="producto1">4</option>
+              <option value="producto1">5</option>
+              <option value="producto2">6</option>
+              <option value="producto3">7</option>
+            </select>
+          </section>
+          <div class="d-flex flex-wrap">
+            <a role="button" href="./carrito.html" class="btn btn-danger">
+              <i class="bi bi-cart2 fs-4 border-all">Añadir al carrito</i>
+            </a>
+          </div>
+        </aside>
+      </section>
+      <!-- WHATSAPP -->
+      <div class="whatsApp" id="contenedorWhatsApp">
+        <a href="./error404.html"
+          ><img
+            src="../img/logos/whatsapp-logo.png"
+            class="img-fluid"
+            alt="logo de WhatsApp"
+        /></a>
+      </div>
+    </main>
+    <footer class="text-dark py-3">
+      <section class="container">
+        <div class="row">
+          <!-- LOGO -->
+          <div class="col-md-12 col-lg-3 text-center">
+            <a href="../index.html"
+              ><img
+                src="../img/logos/estiloBigotesLogoCirculo.png"
+                alt="logo de la empresa"
+                class="img-fluid"
+            /></a>
+          </div>
+          <!-- REDES SOCIALES -->
+          <div class="col-md-4 col-lg-3 mt-4 text-center">
+            <h5>Podés encontrarnos en:</h5>
+            <div class="text-center">
+              <a
+                href="../pages/error404.html"
+                class="link-dark ling-underline-opacity-0 mx-1"
+                ><i class="bi bi-instagram fs-2"></i
+              ></a>
+              <a
+                href="../pages/error404.html"
+                class="link-dark ling-underline-opacity-0 mx-1"
+                ><i class="bi bi-twitter fs-2"></i
+              ></a>
+              <a
+                href="../pages/error404.html"
+                class="link-dark ling-underline-opacity-0 mx-1"
+                ><i class="bi bi-facebook fs-2"></i
+              ></a>
+            </div>
+          </div>
+          <!-- ATENCIÓN AL CLIENTE -->
+          <div class="col-md-4 col-lg-3 mt-4 text-center">
+            <h5>Atención al cliente:</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../pages/error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover fw-bold"
+                  ><i class="bi bi-envelope"></i> estilobigotes@gmail.com</a
+                >
+              </li>
+              <li>
+                <p class="fw-bold">
+                  <i class="bi bi-geo-alt"></i> Tucumán, Argentina
+                </p>
+              </li>
+              <li>
+                <form class="mt-5">
+                  <label class="form-label fw-bold" for="mail"
+                    >Recibí nuestras novedades:</label
+                  >
+
+                  <div class="d-flex justify-content-center">
+                    <div class="input-group w-auto">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="juan@gmail.com"
+                        aria-describedby="emailNovedades"
+                        id="mail"
+                        minlength="12"
+                        maxlength="40"
+                        required
+                      />
+                      <button class="btn btn-secondary" type="submit">
+                        <i class="bi bi-send"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <!-- MEDIOS DE PAGO -->
+          <div class="col-md-4 col-lg-3 mt-4 text-center">
+            <h5>Medios de pago:</h5>
+            <div class="row">
+              <div class="col-md-4 col-lg-4">
+                <img
+                  src="../img/logos/mastercard.png"
+                  alt="logo de mastercard"
+                  class="img-fluid imgPago"
+                />
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <img
+                  src="../img/logos/visa.png"
+                  alt="logo de visa"
+                  class="img-fluid imgPago"
+                />
+              </div>
+              <div class="col-md-4 col-lg-4 mb-5">
+                <img
+                  src="../img/logos/naranja.png"
+                  alt="logo de tarjeta naranja"
+                  class="img-fluid imgPago"
+                />
+              </div>
+            </div>
+
+            <a
+              href="#bodyProductoIndividual"
+              class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover fs-6 fw-bold"
+              >Volver al inicio <i class="bi bi-arrow-up"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

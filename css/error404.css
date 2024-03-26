@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Heebo:wght@100&family=Nunito:wght@300&display=swap");
+h1 {
+  font-family: "Architects Daughter";
+}
+p {
+  font-family: "Nunito", sans-serif;
+}
+
+@media all and (max-width: 767px) {
+  #imgError404 {
+    width: 75%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  #imgError404 {
+    width: 60%;
+  }
+}
+@media all and (min-width: 991px) {
+  #imgError404 {
+    width: 50%;
+  }
+}

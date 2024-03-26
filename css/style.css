@@ -1,0 +1,589 @@
+/* FUENTES */
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Heebo:wght@100&family=Nunito:wght@300&display=swap");
+/* -------------------------  N  A  V  B  A  R  ------------------------- */
+body {
+  padding-top: 130px;
+}
+#bodyProductoIndividual {
+  padding-top: 150px;
+}
+#logoLink img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+#logoLink {
+  height: 125px;
+}
+#crearCuenta {
+  min-width: 150px;
+}
+nav {
+  font-family: "Nunito", sans-serif;
+}
+/* -------------------------  F O O T E R  ------------------------- */
+/*FUENTES*/
+footer h5 {
+  font-family: "Architects Daughter";
+}
+footer a,
+footer p,
+footer label {
+  font-family: "Heebo";
+}
+/*PARA QUE EL FOOTER QUEDE ABAJO*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+}
+/*PARA QUE LAS IMAGENES APAREZCAN MÁS CHICAS EN LA VISTA DE UN CELULAR*/
+@media all and (max-width: 576px) {
+  .imgPago {
+    width: 25%;
+  }
+}
+/* HE CAMBIADO EL COLOR DE FONDO POR UNO PASTEL */
+footer {
+  background-color: #ab9680;
+}
+
+/* -------------------------  M O D A L  ------------------------- */
+#modalMisMascotas {
+  font-family: "Architects Daughter";
+  font-weight: bold;
+}
+
+/* -------------------------  C A R O U S E L  ------------------------- */
+@media all and (max-width: 576px) {
+  .videoBanner {
+    height: 500px;
+    object-fit: cover;
+  }
+  .imgBanner {
+    height: 500px;
+    object-fit: cover;
+  }
+}
+/* dispositivos md */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .videoBanner {
+    height: 280px;
+    object-fit: cover;
+  }
+  .imgBanner {
+    height: 280px;
+    object-fit: cover;
+  }
+  .alturaFija {
+    height: 280px;
+  }
+}
+/* dispositivos grandes lg */
+@media all and (min-width: 992px) {
+  .videoBanner {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .imgBanner {
+    height: 500px;
+    object-fit: cover;
+  }
+  .alturaFija {
+    height: 500px;
+  }
+}
+
+/* -------------------------  A L I M E N T O S  ------------------------- */
+.contenedorAlimentos {
+  background-color: rgb(255, 245, 226);
+}
+.imgBannerAlimentos {
+  height: 120px;
+  object-fit: cover;
+}
+h2 {
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
+}
+.imgCardAlimentos {
+  /* height: 400px; */
+  width: 100%;
+}
+
+/* dispositivos md */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .imgBannerAlimentos {
+    height: 313px;
+    object-fit: cover;
+  }
+  .imgCardAlimentos {
+    height: 400px;
+  }
+  .imgSobres {
+    margin-top: 83px;
+  }
+  .imgArreglosBolsas {
+    height: 282px;
+  }
+  .imgArreglosBolsas2 {
+    height: 279px;
+  }
+  .imgPurinaPerros {
+    margin-top: 25px;
+  }
+  .imgPurinaPerros2 {
+    height: 445px;
+  }
+  .textoMdUl {
+    font-size: 19px;
+  }
+}
+
+/* dispositivos grandes lg */
+@media all and (min-width: 992px) {
+  .imgBannerAlimentos {
+    height: 190px;
+    object-fit: cover;
+  }
+  .imgSobres {
+    margin-top: 78px;
+  }
+  .imgArreglosBolsas {
+    height: 260px;
+  }
+  .imgArreglosBolsas2 {
+    height: 259px;
+  }
+  .imgArreglosBolsas3 {
+    margin-top: 10px;
+  }
+  .imgPurinaPerros {
+    height: 478px;
+  }
+  .imgPurinaPerros2 {
+    height: 478px;
+    width: 140%;
+    padding-right: 80px;
+  }
+  .imgPurinaPerros3 {
+    height: 478px;
+  }
+}
+
+/* -------------------------  P A G I N A   P R I N C I P A L  ------------------------- */
+.enlace {
+  background: #f9d7b0;
+}
+
+#letraTamaño {
+  font-size: 25px;
+  font-weight: 800;
+}
+.contenedorHover {
+  overflow: hidden;
+}
+.imgHover {
+  transition: 0.5s ease;
+}
+.efecto img:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  font-family: "Architects Daughter", cursive;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.fondoDestacado {
+  background: #ab9680;
+}
+
+.generalFuente {
+  font-family: "Heebo", sans-serif;
+}
+
+#letraBoton {
+  font-family: "Nunito", sans-serif;
+}
+
+#unicoFondo {
+  background: #f9d7b0;
+}
+
+#imgTamaño {
+  height: 400px;
+}
+
+#parrafoCuidado {
+  font-size: 30px;
+}
+
+#parrafoOferta {
+  font-size: 25px;
+}
+
+@media all and (max-width: 767px) {
+  #letraTamaño {
+    font-size: 15px;
+    font-weight: 800;
+  }
+}
+/* --------------  P U B L I C I D A D  ---------- */
+.publicidadContainer {
+  height: 474px;
+  overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  .publicidadContainer {
+    width: 95%;
+    height: auto;
+  }
+  #publicidad2 img {
+    width: 100%;
+  }
+}
+
+/* -------------------------  D E V O L U C I O N E S  ------------------------- */
+.contenedorDevoluciones h3 {
+  font-family: "Architects Daughter";
+  font-weight: bold;
+}
+
+/* -------------------------  C O N T A C T O  ------------------------- */
+#bodyContacto {
+  background: #ececec;
+}
+.contenedorContacto h2 {
+  font-family: "Architects Daughter";
+  font-weight: bold;
+}
+.contenedorContacto h5 {
+  font-family: "Architects Daughter";
+  font-weight: bold;
+}
+.contenedorContacto label {
+  font-family: "Heebo";
+  font-weight: bolder;
+}
+#consulta {
+  resize: none;
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  #imgContacto {
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+/* -------------------------  N O S O T R O S  ------------------------- */
+#parrafoNosotros {
+  font-size: 24px;
+}
+
+.contenedorNosotros {
+  background: #f9d7b0;
+}
+
+#tamañoLogo {
+  width: 100%;
+}
+
+.imgTeam {
+  border-radius: 100%;
+  width: 70%;
+  position: relative;
+  left: 14%;
+  margin-top: 20px;
+}
+
+.nombreTeam {
+  font-size: 32px;
+  font-weight: bolder;
+  font-family: "Architects Daughter", cursive;
+}
+
+@media all and (max-width: 767px) {
+  .cajaImagenNosotros {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .cajaImagenNosotros {
+    display: none;
+  }
+}
+
+/* -------------------------  L O G I N  ------------------------- */
+#bgLogin {
+  background: #ececec;
+}
+/* -------------------------  C A R R I T O  ------------------------- */
+#bodyCarrito {
+  background: #ececec;
+}
+/* -------------------------  P E R R O S  ------------------------- */
+.contenedorProductosPerros {
+  background-color: #ececec;
+}
+.contenedorProductosPerros h5 {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+#contenedorPerros {
+  background-color: rgb(0, 109, 187);
+}
+@media all and (max-width: 767px) {
+  .bannerPerros {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .bannerPerros {
+    width: 100%;
+  }
+}
+@media all and (min-width: 992px) {
+  .bannerPerros {
+    width: 50%;
+  }
+}
+
+/* -------------------------  G A T O S  ------------------------- */
+.contenedorProductosGatos {
+  background-color: #ececec;
+}
+.contenedorProductosGatos h5 {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+#contenedorGatos {
+  background-color: rgb(254, 156, 42);
+}
+@media all and (max-width: 767px) {
+  .bannerGatos {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .bannerGatos {
+    width: 100%;
+  }
+}
+@media all and (min-width: 992px) {
+  .bannerGatos {
+    width: 50%;
+  }
+}
+/* -------------------------  P R O D U C T O S  ------------------------- */
+#sectionComentarios {
+  scroll-margin-top: 120px;
+}
+#descripcionCompleta {
+  scroll-margin-top: 120px;
+}
+/*aqui pondre los estilos del carrousel producto*/
+.producto-rating {
+  position: relative;
+  content: "|";
+  color: #d9d9d9;
+  margin-left: 1px;
+}
+/* boton con gradiente de ofertas */
+.boton {
+  background: linear-gradient(70deg, #6fa9d9, #bbf1ef);
+}
+hr {
+  border-radius: 5px;
+  height: 5px;
+  color: #333;
+  background-color: #333;
+}
+/* subtitulos con gradientes */
+.subtitulo1 {
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(70deg, #6fa9d9, #bbf1ef);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.listasImg {
+  list-style-image: url(../img/comprobado.png);
+}
+/* espacio 5 estrellas */
+#form {
+  width: 2550px;
+  margin: 0 auto;
+  height: 10px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 10px;
+}
+
+.inputEstrella[type="radio"] {
+  display: none;
+}
+
+.labelEstrella {
+  color: orange;
+}
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+@media all and (max-width: 576px) {
+  .promoAlimento {
+    display: none;
+  }
+  .promoAlimento2 {
+    display: none;
+  }
+}
+
+/*agregar codigo para dispositivos sm */
+@media all and (min-width: 577px) and (max-width: 767px) {
+  .promoAlimento {
+    display: none;
+  }
+  .promoAlimento2 {
+    display: none;
+  }
+}
+/* dispositivos md */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .containerTraveness {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sectionCarousel {
+    width: 100%;
+  }
+  .sectionCarousel2 {
+    width: 100%;
+  }
+  .sectionDetalle {
+    width: 100%;
+  }
+  .sectionDetalle1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .preciosCard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .preciosCardMini {
+    margin: 0px 30px;
+  }
+  .promoAlimento {
+    display: none;
+  }
+  .promoAlimento2 {
+    display: none;
+  }
+  .arreglosIpad {
+    font-size: 20px;
+  }
+}
+/* dispositivos grandes lg */
+@media all and (min-width: 992px) {
+  /* arreglos producto carousel y detalles */
+  .containerTraveness {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .sectionCarousel {
+    width: 25%;
+    position: sticky;
+    top: 130px;
+  }
+  .sectionCarousel2 {
+    width: 25%;
+    position: sticky;
+    top: 135px;
+  }
+  .sectionDetalle {
+    width: 75%;
+    display: flex;
+  }
+  .sectionDetalle1 {
+    width: 100%;
+  }
+  .preciosCard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .preciosCardMini {
+    margin: 0px 30px;
+  }
+  .promoAlimento {
+    height: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px #999;
+    position: sticky;
+    top: 130px;
+  }
+  .tachado {
+    text-decoration: line-through #ff0000 4px;
+  }
+  .promoAlimento2 {
+    height: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px #999;
+    position: sticky;
+    top: 130px;
+    width: 65%;
+  }
+  .tachado2 {
+    text-decoration: line-through #ff0000 4px;
+  }
+}
+
+/* -------------------------  W H A T S A P P  ------------------------- */
+
+@media all and (max-width: 767px) {
+  .whatsApp {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .whatsApp {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+}
+@media all and (min-width: 992px) {
+  .whatsApp {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+}
+
+#contenedorWhatsApp {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+}

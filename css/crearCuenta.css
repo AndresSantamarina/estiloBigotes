@@ -1,0 +1,63 @@
+body {
+  background: #ececec;
+}
+#imgCuenta {
+  object-fit: cover;
+  object-position: left;
+  height: 100%;
+  width: 100%;
+}
+#imgCuentaContainer {
+  height: 100%;
+}
+#textoImgCuenta {
+  position: relative;
+  top: 40px;
+  font-family: "Architects Daughter";
+}
+/*------------ container ------------*/
+.box-area {
+  width: 100vw;
+}
+/*------------ Right box ------------*/
+.right-box {
+  padding: 30px 30px 30px 30px;
+}
+/*------------ Left box ------------*/
+.left-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/*------------ Custom Placeholder ------------*/
+::placeholder {
+  font-size: 16px;
+}
+.rounded-4 {
+  border-radius: 20px;
+}
+.rounded-5 {
+  border-radius: 30px;
+}
+
+label {
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+}
+
+button {
+  font-family: "Nunito", sans-serif;
+}
+
+/*------------ For small screens------------*/
+@media only screen and (max-width: 767px) {
+  .box-area {
+    margin: 0 10px;
+  }
+  .left-box {
+    height: 210px;
+    overflow: hidden;
+  }
+  .right-box {
+    padding: 20px;
+  }
+}

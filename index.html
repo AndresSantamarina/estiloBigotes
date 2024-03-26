@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Estilo Bigotes es una tienda al por menor dedicado a la venta de productos como alimento, indumentaria y accesorios para mascotas en general."
+    />
+    <meta
+      name="keywords"
+      content="perro, gato, mascota, alimento, ropa, juguetes, indumentaria, animales, ofertas, royal cannin, petshop"
+    />
+    <meta name="author" content="Grupo 5" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      href="./img/logos/estiloBigotesIcon.ico"
+      type="image/x-icon"
+    />
+    <title>Estilo Bigotes - Petshop</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg bg-light">
+        <div class="container text-center">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="./index.html"
+            id="logoLink"
+            ><img
+              src="./img/logos/estiloBigotesLogoSinFondo.png"
+              alt="Logo de estilo bigotes"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarEstiloBigotes"
+            aria-controls="navbarEstiloBigotes"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarEstiloBigotes">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./pages/perros.html"
+                      >Perros</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/gatos.html">Gatos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/alimentos.html"
+                      >Alimentos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Atención al Cliente
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./pages/entregaEnvios.html"
+                      >Entrega y Envíos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/devoluciones.html"
+                      >Devoluciones</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/contacto.html"
+                      >Contacto</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html"
+                  >Acerca de Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary me-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalMisMascotas"
+                >
+                  <i class="bi bi-camera"></i> Mis Mascotas
+                </button>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+                minlength="3"
+                maxlength="50"
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                Buscar
+              </button>
+            </form>
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-column text-center align-items-center"
+            >
+              <li class="nav-item d-flex">
+                <ul class="navbar-nav ms-auto mb-lg-0 d-flex flex-row">
+                  <li class="nav-item my-auto">
+                    <a
+                      class="nav-link fs-4 p-0 mt-2 m-md-0 m-lg-0"
+                      href="./pages/login.html"
+                      ><i class="bi bi-person-circle"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item my-auto">
+                    <a
+                      class="nav-link fs-4 mt-2 p-0 m-md-0 m-lg-0"
+                      href="./pages/carrito.html"
+                      ><i class="bi bi-cart3"></i
+                    ></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item my-auto" id="crearCuenta">
+                <a class="nav-link" href="./pages/crearCuenta.html"
+                  >Crear Cuenta</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- MODAL  -->
+      <div
+        class="modal fade"
+        id="modalMisMascotas"
+        tabindex="-1"
+        aria-labelledby="label modal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalMisMascotas">
+                ¡Subí una foto de tu/s mascota/s!
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <img
+                      src="./img/modalPerroGato.avif"
+                      alt="perro y gato"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-sm-12">
+                    <p class="fs-5 fw-bold">
+                      Presentá a tu mascota y obtené un 10% de descuento!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <a
+                href="./pages/error404.html"
+                role="button"
+                class="btn btn-warning"
+                >Subir</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- CAROUSEL  -->
+      <section class="container-fluid p-0">
+        <div
+          id="carouselDestacados"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2500">
+              <a href="./pages/alimentos.html#alimentoTraveness"
+                ><video
+                  class="img-fluid d-block w-100 videoBanner"
+                  autoplay
+                  loop
+                  muted
+                >
+                  <source
+                    src="./img/Slider/banner_video.mp4"
+                    type="video/mp4"
+                    class="object-fit-contain"
+                    alt="chica corre con su perro en la montaña"
+                    autoplay
+                  /></video
+              ></a>
+            </div>
+            <div class="carousel-item">
+              <a href="./pages/alimentos.html#sterilized">
+                <img
+                  src="./img/Slider/banner1.png"
+                  class="d-block w-100 imgBanner img-fluid"
+                  alt="oferta alimento royal canin"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="./pages/alimentos.html#alimentoPurinaPerro">
+                <img
+                  src="./img/Slider/banner2.png"
+                  class="d-block w-100 imgBanner img-fluid"
+                  alt="oferta alimento purina proplan"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="./pages/alimentos.html#piedrasSanitarias">
+                <img
+                  src="./img/Slider/banner3.png"
+                  class="d-block w-100 imgBanner img-fluid"
+                  alt="oferta piedras sanitarias limpicat"
+                />
+              </a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselDestacados"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselDestacados"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- PAGINA PRINCIPAL -->
+      <h2 class="fondoDestacado text-center py-4 mb-3">
+        Te ofrecemos los mejores productos para tu mejor amigo
+      </h2>
+      <section class="container-fluid my-5 w-75">
+        <div class="row text-center" id="posContenedor">
+          <div class="col-lg-6 card border-0 mb-2 efecto">
+            <div class="card contenedorHover">
+              <a
+                href="./pages/perros.html"
+                class="text-decoration-none link-dark generalFuente enlace p-2"
+                id="letraTamaño"
+                >PERROS<img
+                  src="./img/perrito2.png"
+                  alt="Perros"
+                  class="img-fluid card-img imgHover my-2"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-6 card border-0 mb-2 efecto">
+            <div class="card contenedorHover">
+              <a
+                href="./pages/gatos.html"
+                class="text-decoration-none link-dark generalFuente enlace p-2"
+                id="letraTamaño"
+                >GATOS
+                <img
+                  src="./img/gatito.png"
+                  alt="Gatos"
+                  class="img-fluid card-img imgHover my-2"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <h2 class="fondoDestacado text-center py-4 mb-5">
+          Productos destacados
+        </h2>
+        <article class="row generalFuente">
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+            <div class="card h-100">
+              <img
+                src="./img/hueso-goma_soga.jpg"
+                class="card-img-top"
+                alt="accesorio perro"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title"><b>Juguete soga con hueso</b></h5>
+                <p class="card-text">Soga con hueso de goma, 30 cm de largo.</p>
+                <p><b>$3500</b></p>
+              </div>
+              <div class="card-footer text-center">
+                <a
+                  href="./pages/carrito.html"
+                  class="btn btn-light border"
+                  id="letraBoton"
+                  >Añadir al carrito <i class="fa-solid fa-cart-arrow-down"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+            <div class="card h-100">
+              <img
+                src="./img/comedero-doble-inox.jpg"
+                class="card-img-top"
+                alt="accesorio perro"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title"><b>Comedor doble inoxidable</b></h5>
+                <p class="card-text">
+                  Base de aluminio con goma antideslizante, 14 cm de diámetro.
+                </p>
+                <p><b>$1900</b></p>
+              </div>
+              <div class="card-footer text-center">
+                <a
+                  href="./pages/carrito.html"
+                  class="btn btn-light border"
+                  id="letraBoton"
+                  >Añadir al carrito <i class="fa-solid fa-cart-arrow-down"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+            <div class="card h-100">
+              <img
+                src="./img/rascador-con-ratita.jpg"
+                class="card-img-top"
+                alt="accesorio gato"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title"><b>Rascador rayita con ratón</b></h5>
+                <p class="card-text">
+                  Medidas: Base 30 cm x 30 cm. Altura 40 cm.
+                </p>
+                <p><b>$2200</b></p>
+              </div>
+              <div class="card-footer text-center">
+                <a
+                  href="./pages/carrito.html"
+                  class="btn btn-light border"
+                  id="letraBoton"
+                  >Añadir al carrito <i class="fa-solid fa-cart-arrow-down"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+            <div class="card h-100">
+              <img
+                src="./img/juguete-pluma.jpg"
+                class="card-img-top"
+                alt="accesorio gato"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title"><b>Juguete para gatos</b></h5>
+                <p class="card-text">
+                  Juguete con ventosa para el piso o ventana, altura 30 cm
+                </p>
+                <p><b>$7950</b></p>
+              </div>
+              <div class="card-footer text-center">
+                <a
+                  href="./pages/carrito.html"
+                  class="btn btn-light border"
+                  id="letraBoton"
+                  >Añadir al carrito <i class="fa-solid fa-cart-arrow-down"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="container-fluid my-4 w-100 text-center ms-0">
+        <div class="card mb-3 mt-3">
+          <div class="row g-0" id="unicoFondo">
+            <div class="col-md-4">
+              <img
+                src="./img/perrosygatos2.png"
+                class="img-fluid rounded-start rounded w-100"
+                alt="perros y gatos"
+              />
+            </div>
+            <div class="col-md-8 my-auto">
+              <div class="card-body">
+                <h2 class="card-title">¡Cuidalos como ellos se merecen!</h2>
+                <p class="card-text" id="parrafoCuidado">
+                  Seleccionamos cada artículo para que tu mascota sea feliz
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- publicidad -->
+      <section
+        class="d-flex justify-content-around align-content-center mb-3 flex-md-column flex-lg-row align-items-center"
+      >
+        <aside class="publicidadContainer mb-4 d-none d-md-block">
+          <img
+            src="./img/veterinaria.jpg"
+            alt="Publicidad de curso veterinario"
+          />
+        </aside>
+        <aside class="publicidadContainer mb-4" id="publicidad2">
+          <img
+            src="./img/publicidad2.jfif"
+            alt="Publicidad de veterinario a domicilio"
+          />
+        </aside>
+      </section>
+      <section class="container-fluid h-50">
+        <h2 class="fondoDestacado text-center py-4 m-0">
+          Una promo para vos y tu mascota
+        </h2>
+        <div class="card mb-3">
+          <img
+            src="./img/istockphoto-930281684-170667a.jpg"
+            class="card-img-top img-fluid"
+            alt="perros y gatos descuento"
+          />
+          <div class="card-body text-center">
+            <h2 class="card-title">
+              Tenés un 20% de descuento en tu primera compra
+            </h2>
+            <p
+              class="card-text generalFuente text-uppercase"
+              id="parrafoOferta"
+            >
+              Válido en todos los productos
+            </p>
+            <a
+              role="button"
+              class="btn btn-outline-secondary mx-auto text-sm-end"
+              href="./pages/error404.html"
+            >
+              Comprar ahora
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- WHATSAPP -->
+      <div class="whatsApp" id="contenedorWhatsApp">
+        <a href="./pages/error404.html"
+          ><img
+            src="./img/logos/whatsapp-logo.png"
+            class="img-fluid"
+            alt="logo de WhatsApp"
+        /></a>
+      </div>
+    </main>
+
+    <footer class="text-dark py-3 mt-3">
+      <section class="container">
+        <div class="row">
+          <!-- LOGO -->
+          <div class="col-md-12 col-lg-3 text-center">
+            <a href="index.html"
+              ><img
+                src="./img/logos/estiloBigotesLogoCirculo.png"
+                alt="logo de la empresa"
+                class="img-fluid"
+            /></a>
+          </div>
+          <!-- REDES SOCIALES -->
+          <div class="col-md-4 col-lg-3 mt-4 text-center">
+            <h5>Podés encontrarnos en:</h5>
+            <div class="text-center">
+              <a
+                href="./pages/error404.html"
+                class="link-dark ling-underline-opacity-0 mx-1"
+                ><i class="bi bi-instagram fs-2"></i
+              ></a>
+              <a
+                href="./pages/error404.html"
+                class="link-dark ling-underline-opacity-0 mx-1"
+                ><i class="bi bi-twitter fs-2"></i
+              ></a>
+              <a
+                href="./pages/error404.html"
+                class="link-dark ling-underline-opacity-0 mx-1"
+                ><i class="bi bi-facebook fs-2"></i
+              ></a>
+            </div>
+          </div>
+          <!-- ATENCIÓN AL CLIENTE -->
+          <div class="col-md-4 col-lg-3 mt-4 text-center">
+            <h5>Atención al cliente:</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./pages/error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover fw-bold"
+                  ><i class="bi bi-envelope"></i> estilobigotes@gmail.com</a
+                >
+              </li>
+              <li>
+                <p class="fw-bold">
+                  <i class="bi bi-geo-alt"></i> Tucumán, Argentina
+                </p>
+              </li>
+              <li>
+                <form class="mt-5">
+                  <label class="form-label fw-bold" for="mail"
+                    >Recibí nuestras novedades:</label
+                  >
+
+                  <div class="d-flex justify-content-center">
+                    <div class="input-group w-auto">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="juan@gmail.com"
+                        aria-describedby="emailNovedades"
+                        id="mail"
+                        minlength="12"
+                        maxlength="40"
+                        required
+                      />
+                      <button class="btn btn-secondary" type="submit">
+                        <i class="bi bi-send"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <!-- MEDIOS DE PAGO -->
+          <div class="col-md-4 col-lg-3 mt-4 text-center">
+            <h5>Medios de pago:</h5>
+            <div class="row">
+              <div class="col-md-4 col-lg-4">
+                <img
+                  src="./img/logos/mastercard.png"
+                  alt="logo de la empresa"
+                  class="img-fluid imgPago"
+                />
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <img
+                  src="./img/logos/visa.png"
+                  alt="logo de la empresa"
+                  class="img-fluid imgPago"
+                />
+              </div>
+              <div class="col-md-4 col-lg-4 mb-5">
+                <img
+                  src="./img/logos/naranja.png"
+                  alt="logo de la empresa"
+                  class="img-fluid imgPago"
+                />
+              </div>
+            </div>
+            <a
+              href="index.html"
+              class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover fs-6 fw-bold"
+              >Volver al inicio <i class="bi bi-arrow-up"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
